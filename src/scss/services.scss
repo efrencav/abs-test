@@ -1,0 +1,135 @@
+
+@import "variable";
+@import "global-styles";
+@import "navbar";
+
+/*
+zoom-services
+*/
+
+.zoom-services__title {
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: $brand-primary;
+    display: inline-block;
+    vertical-align: top;
+    color: $white;
+    padding: 4px 6px 1px;
+    margin-bottom: 70px;
+  }
+  
+  .zoom-services__title:empty {
+    opacity: 0;
+  }
+  
+  .zoom-services__wrapper {
+    margin-bottom: 70px;
+  }
+  
+  .zoom-services__wrapper_bordered {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $light-grey;
+  }
+  
+  .zoom-services__list {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    border-left: 1px solid $suva-grey;
+    border-top: 1px solid $suva-grey;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  .zoom-services__item {
+    width: 25%;
+    padding: 30px 32px 172px;
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    border-right: 1px solid $suva-grey;
+    border-bottom: 1px solid $suva-grey;
+    transition: all 0.3s;
+    position: relative;
+    background: $white;
+  }
+  
+  .zoom-services__item:hover {
+    background: $brand-primary;
+    color: $white;
+  }
+  
+  .zoom-services__item-title {
+    font-size: 26px;
+    line-height: 1;
+    font-family: $playfair-font;
+    font-weight: 600;
+    display: block;
+    /* text-transform: uppercase; */
+    margin-bottom: 18px;
+  }
+  
+  .zoom-services__item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    color: $suva-grey;
+    transition: all 0.3s;
+  }
+  
+  .zoom-services__item:hover .zoom-services__item-text {
+    color: $white;
+  }
+  
+  .zoom-services__item-footer {
+    display: block;
+    position: absolute;
+    left: 32px;
+    bottom: 24px;
+  }
+  
+  .zoom-services__more {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .zoom-services__item-icon {
+    font-size: 48px;
+    display: block;
+    color: $brand-primary;
+    margin-bottom: 46px;
+    transition: all 0.3s;
+  }
+  
+  .zoom-services__item:hover .zoom-services__item-icon {
+    color: $white;
+  }
+  
+  .zoom-services__item:hover .zoom-services__more {
+    color: $white;
+  }
+  
+  .zoom-services__item:hover .zoom-services__item-title {
+    color: $white;
+  }
+  
+  .zoom-services__item:active { 
+    width: 25%;
+    padding: 30px 32px 172px;
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+    border-right: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+    transition: all 0.3s;
+    position: relative;
+    background: $brand-primary;
+    color: $white;
+  }
+  
+  /*
+  zoom-slider
+  */

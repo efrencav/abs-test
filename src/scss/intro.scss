@@ -1,0 +1,218 @@
+
+@import "variable";
+@import "global-styles";
+@import "navbar";
+
+
+/*
+zoom-counter
+*/
+
+.zoom-counter {
+    padding: 220px 0 60px;
+  }
+  
+  .zoom-counter__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  
+  .zoom-counter__card {
+    padding: 54px 59px 60px 66px;
+    background-size: cover;
+    background-position: 50%;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    width: 34.3%;
+    min-width: 34.3%;
+    position: relative;
+    margin-right: 14.4%;
+  }
+  
+  .zoom-counter__card:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background: $white;
+  }
+  
+  .zoom-counter__card-title {
+    color: $black;
+    font-size: 30px;
+    font-family: $open-sans-font;
+    line-height: 1;
+    margin-bottom: 76px;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+  }
+  
+  .zoom-counter__card-value {
+    background: inherit;
+    font-size: 250px;
+    line-height: 1;
+    font-family: $open-sans-font;
+    margin-left: -2px;
+    color: $black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .zoom-counter__card-description {
+    color: $black;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .zoom-counter__info {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+  
+  .zoom-counter__subtitle {
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: $brand-primary;
+    display: inline-block;
+    vertical-align: top;
+    color: $white;
+    padding: 4px 6px 1px;
+    margin-bottom: 26px;
+  }
+  
+  .zoom-counter__subtitle:empty {
+    opacity: 0;
+  }
+  
+  .zoom-counter__title {
+    font-size: 72px;
+    line-height: 0.861111111111111;
+    font-family: $playfair-font;
+    margin-bottom: 50px;
+  }
+  
+  .zoom-counter__text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: $suva-grey;
+    margin-bottom: 103px;
+  }
+  
+  .zoom-counter__text p {
+    margin-bottom: 30px;
+  }
+  
+  .zoom-counter__read-more {
+    color: currentColor;
+    font-family: inherit;
+    text-decoration: none;
+    transition: 0.3s ease;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: $open-sans-font;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+  
+  .zoom-counter__read-more:after {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  
+  .zoom-counter__read-more:hover {
+    color: $brand-primary;
+  }
+  
+  .zoom-counter__read-more:hover:after {
+    opacity: 1;
+  }
+  
+  .zoom-counter__read-more_active {
+    color: $brand-primary;
+  }
+  
+  .zoom-counter__read-more_active:after {
+    opacity: 1;
+  }
+  
+  .zoom-counter__read-more_inverted:after {
+    opacity: 1;
+  }
+  
+  .zoom-counter__read-more_inverted:hover:after {
+    opacity: 0;
+  }
+  
+  .zoom-counter__read-more:after {
+    height: 2px;
+  }
+  
+  /*
+  zoom-counters
+  */
+  
+  .zoom-counters {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+  
+  .zoom-counters__item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  
+  .zoom-counters__value {
+    font-size: 68px;
+    line-height: 1;
+    font-family: $playfair-font;
+    position: relative;
+    margin-right: 28px;
+    visibility: hidden;
+  }
+  
+  .zoom-counters__value-inner {
+    position: absolute;
+    visibility: visible;
+    left: 0;
+    top: 0;
+  }
+  
+  .zoom-counters__text {
+    padding-top: 11px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: $suva-grey;
+  }
+  
+  /*
+  zoom-image-head
+  */
