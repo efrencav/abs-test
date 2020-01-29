@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby'
 import Carousel from "react-bootstrap/Carousel"
 import SlideImg1 from "../images/slideshow/banner-1.jpg"
 import SlideImg2 from "../images/slideshow/banner-2.jpg"
@@ -22,9 +23,7 @@ const Slideshow = () => {
                     sapien massa
                     <br /> convallis a pellentesque nec, egestas non nisi.
                   </p>
-                  <a href="#" className="btn btn-primary animated3">
-                    Read More
-                  </a>
+                  <Link to="/contact" className="btn btn-primary animated3">Read More</Link>
                 </div>
               </div>
             </div>
@@ -45,9 +44,7 @@ const Slideshow = () => {
                     sapien massa
                 <br /> convallis a pellentesque nec, egestas non nisi.
               </p>
-                  <a href="#" className="btn btn-primary animated3">
-                    Read More
-              </a>
+                  <Link to="/contact" className="btn btn-primary animated3">Read More</Link>
                 </div>
               </div>
             </div>
@@ -68,9 +65,7 @@ const Slideshow = () => {
                     sapien massa
                 <br /> convallis a pellentesque nec, egestas non nisi.
               </p>
-                  <a href="#" className="btn btn-primary animated3">
-                    Read More
-              </a>
+                  <Link to="/contact" className="btn btn-primary animated3">Read More</Link>
                 </div>
               </div>
             </div>

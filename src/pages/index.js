@@ -1,190 +1,328 @@
 import React from "react"
-import Layout from "../components/Layout"
-import { Link } from "react-scroll"
-
-import BannerImage from "../images/preview/parallax.jpg"
-import SliderImage from "../images/preview/revolution-slider.jpg"
-import BannerBg from "../images/bg/banner.jpg"
+import Introduction from "../components/Introduction"
 import SectionTitle from "../components/SectionTitle"
-
+import Portfolio from "../components/Portfolio"
+// import PortfolioSlider from "../components/PortfolioSlider"
+import Slider from "react-slick"
+import BlogImg4 from "../images/blog/img-4.jpg"
+import BlogImg5 from "../images/blog/img-5.jpg"
+import BlogImg8 from "../images/blog/img-8.jpg"
+import BlogImg9 from "../images/blog/img-9.jpg"
+import Navbar from "../components/Navbar"
+import Slideshow from "../components/Slideshow"
 import SEO from "../components/SEO"
+import Layout from "../components/Layout"
+import "../scss/portfolioSlider.scss"
+import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
+import Services from "../components/Services"
 
-export default () => {
-    return (
-        <>
-            <Layout>
-                <SEO title="Abstract Creative" />
-                <section id="hero-banner" className="parallax" style={{ backgroundImage: `url(${BannerBg})` }}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="preview-banner text-center white">
-                                    <h1>Othelo</h1>
-                                    <p>Multipurpose React Gatsby Onepage Template</p>
-                                    <Link to="portfolio" smooth={true} duration={1000} className="btn btn-primary page-scroll">Template Variation</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section id="portfolio" className="pad-t100 pad-b70">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="section-title text-center">
-                                    <h3>Template Variation</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="product-showcase">
-                                    <a href="./homepageBanner" target="_blank" rel="noopener noreferrer">
-                                        <img src={BannerImage} alt="theshahriyar" />
-                                        <p>Parallax Banner</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
-                                <div className="product-showcase">
-                                    <a href="./homepageSlider" target="_blank" rel="noopener noreferrer">
-                                        <img src={SliderImage} alt="theshahriyar" />
-                                        <p>Revolution Slideshow</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+const HomepageSlider = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  }
+  return (
+    <>
+      <Layout>
+      <Helmet>
+        <script src={withPrefix('swiper.min.js')} type="text/javascript" />
+      </Helmet>
+        <SEO/>
+        <Navbar />
+        <Slideshow/>
 
-                <section id="services" className="pad-t100 pad-b70 parallax" style={{ backgroundColor: "#f2f2f2" }}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <SectionTitle titleStyle="text-center" title="Features" />
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-genius"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">Latest Gatsby JS</h3>
-                                            </a>
-                                            <p>We are using here latest version of Gatsby Framework. And we will update it.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-aperture"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">FontAwesome icon</h3>
-                                            </a>
-                                            <p>We are using here 4.7.0 version of FontAwesome icon. And we will update it.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-layers"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">ET Line icon Pack</h3>
-                                            </a>
-                                            <p>Bonding is integrated with ET Line icon pack. When update come then We will update.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-clock"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">React Bootstrap</h3>
-                                            </a>
-                                            <p>Othelo is integrated with famous react-bootstrap which is built with Bootstrap 4. Be Happy.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-beaker"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">Responsive Design</h3>
-                                            </a>
-                                            <p>Our Template is 100% responsive. Before release we tested it in many device.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="feature-2">
-                                    <div className="media">
-                                        <div className="media-left">
-                                            <div className="feature-icon text-center">
-                                                <i className="icon-bargraph"></i>
-                                            </div>
-                                        </div>
-                                        <div className="media-body ml-3">
-                                            <a href="#">
-                                                <h3 className="media-heading">Browser Compatible</h3>
-                                            </a>
-                                            <p>This Template is compatible in every web browser. We tested in chrome, mozilla, EDGE and result is fine.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        {/* Start About Us Section */}
+        <section           
+        id="about-section"
+        className="pad-t10">        
+          <Introduction />
+        </section>
 
-                <section className="pad80 footer-minimal" style={{ backgroundColor: "#1cbac8" }}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12 text-center">
-                                <h3>Othelo</h3>
-                                <div className="copyright-text">
-                                    <p>Copyright © All Rights Reserved. Developed by <a href="#">TheShahriyar</a></p>
-                                </div>
-                            </div>
+        {/* End About Us Section */}
+        
+
+
+
+        {/* Start Service Section */}
+        <section
+          id="services"
+          className="pad-t80"
+          style={{ backgroundColor: "#f3f3f3" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <SectionTitle
+                  titleStyle="text-center"
+                  title="Our Services"
+                  text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat mattis eros. Nullam malesuada
+                    erat ut turpis. Suspendisse urna nibh, viverra non, semper
+                    suscipit, posuere a, pede. Donec nec justo"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+              <Services />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* End Service Section */}
+
+        {/* Start Portfolio Section */}
+        <section id="portfolio" className="pad-t80 pad-b50">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <SectionTitle
+                  titleStyle="text-center"
+                  title="Awarded Work"
+                  text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat mattis eros. Nullam malesuada
+                    erat ut turpis. Suspendisse urna nibh, viverra non, semper
+                    suscipit, posuere a, pede. Donec nec justo"
+                />
+              </div>
+            </div>
+            <Portfolio />
+          </div>
+        </section>
+        {/* End Portfolio Section */}
+
+
+        
+
+        {/* Start Latest News Section */}
+        <section
+          id="blog"
+          className="pad-t80 pad-b50"
+          style={{ backgroundColor: "#f2f2f2" }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <SectionTitle
+                  titleStyle="text-center"
+                  title="News & Events"
+                  text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. Donec nec justo"
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <div className="blog-section">
+                  <Slider {...settings} className="row">
+                    <div className="col-md-12">
+                      <div className="latest-news">
+                        <div className="latest-news-img">
+                          <img
+                            src={BlogImg4}
+                            className="img-fluid"
+                            alt="blog-post"
+                          />
+                          <div>
+                            <span>Aug</span>
+                            <span>07</span>
+                          </div>
                         </div>
+                        <div className="comment">
+                          <p>
+                            Posted In: <span>Business, Blog</span>
+                          </p>
+                          <p>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-comments"></i>
+                              </a>{" "}
+                              15
+                            </span>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-eye"></i>
+                              </a>{" "}
+                              11
+                            </span>
+                          </p>
+                        </div>
+                        <h4>
+                          <a href="#">
+                            Lorem Ipsum is dummy text of type setting industry.
+                          </a>
+                        </h4>
+                        <p>
+                          Vivamus magna justo, lacinia eget consectetur convallis
+                          at tellus. Lorem ipsum dolor sit consectetur adipiscing
+                          elit
+                        </p>
+                      </div>
                     </div>
-                </section>
-            </Layout>
-        </>
-    )
+                    <div className="col-md-12">
+                      <div className="latest-news">
+                        <div className="latest-news-img">
+                          <img
+                            src={BlogImg8}
+                            className="img-fluid"
+                            alt="blog-post"
+                          />
+                          <div>
+                            <span>Aug</span>
+                            <span>07</span>
+                          </div>
+                        </div>
+                        <div className="comment">
+                          <p>
+                            Posted In: <span>Business, Blog</span>
+                          </p>
+                          <p>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-comments"></i>
+                              </a>{" "}
+                              15
+                            </span>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-eye"></i>
+                              </a>{" "}
+                              11
+                            </span>
+                          </p>
+                        </div>
+                        <h4>
+                          <a href="#">
+                            Lorem Ipsum is dummy text of type setting industry.
+                          </a>
+                        </h4>
+                        <p>
+                          Vivamus magna justo, lacinia eget consectetur convallis
+                          at tellus. Lorem ipsum dolor sit consectetur adipiscing
+                          elit
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="latest-news">
+                        <div className="latest-news-img">
+                          <img
+                            src={BlogImg9}
+                            className="img-fluid"
+                            alt="blog-post"
+                          />
+                          <div>
+                            <span>Aug</span>
+                            <span>07</span>
+                          </div>
+                        </div>
+                        <div className="comment">
+                          <p>
+                            Posted In: <span>Business, Blog</span>
+                          </p>
+                          <p>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-comments"></i>
+                              </a>{" "}
+                              15
+                            </span>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-eye"></i>
+                              </a>{" "}
+                              11
+                            </span>
+                          </p>
+                        </div>
+                        <h4>
+                          <a href="#">
+                            Lorem Ipsum is dummy text of type setting industry.
+                          </a>
+                        </h4>
+                        <p>
+                          Vivamus magna justo, lacinia eget consectetur convallis
+                          at tellus. Lorem ipsum dolor sit consectetur adipiscing
+                          elit
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="latest-news">
+                        <div className="latest-news-img">
+                          <img
+                            src={BlogImg5}
+                            className="img-fluid"
+                            alt="blog-post"
+                          />
+                          <div>
+                            <span>Aug</span>
+                            <span>07</span>
+                          </div>
+                        </div>
+                        <div className="comment">
+                          <p>
+                            Posted In: <span>Business, Blog</span>
+                          </p>
+                          <p>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-comments"></i>
+                              </a>{" "}
+                              15
+                            </span>
+                            <span>
+                              <a href="#">
+                                <i className="fa fa-eye"></i>
+                              </a>{" "}
+                              11
+                            </span>
+                          </p>
+                        </div>
+                        <h4>
+                          <a href="#">
+                            Lorem Ipsum is dummy text of type setting industry.
+                          </a>
+                        </h4>
+                        <p>
+                          Vivamus magna justo, lacinia eget consectetur convallis
+                          at tellus. Lorem ipsum dolor sit consectetur adipiscing
+                          elit
+                        </p>
+                      </div>
+                    </div>
+                  </Slider>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* End Latest News Section */}
+
+      </Layout>
+    </>
+  )
 }
+
+export default HomepageSlider
