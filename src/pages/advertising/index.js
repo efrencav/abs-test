@@ -25,7 +25,7 @@ export default () => {
                         <div className="row">
                             <div className="col-md-12">
                                 <div className="preview-banner text-center white">
-                                    <h1>Othelo</h1>
+                                    <h1>Advertising</h1>
                                     <p>Multipurpose React Gatsby Onepage Template</p>
                                     <Link to="portfolio" smooth={true} duration={1000} className="btn btn-primary page-scroll">Template Variation</Link>
                                 </div>
@@ -173,7 +173,7 @@ export default () => {
                     </div>
                 </section>
                 {/* End Service Section */}
-                
+
                 {/* Call to action */}
                 <section className="pad80 footer-minimal" style={{ backgroundColor: "#1cbac8" }}>
                     <div className="container">

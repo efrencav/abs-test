@@ -92,13 +92,13 @@ Author URI: http://theshahriyar.com
   padding: 200px 0;
 
   h1 {
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive !important;
+    font-family: $playfair-font !important;
     font-size: 70px;
     line-height: 70px;
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: none !important;
-    color: $brand-primary !important;
+    // color: $brand-primary !important;
   }
 
   p {
@@ -110,7 +110,7 @@ Author URI: http://theshahriyar.com
   &.white {
     h1,
     p {
-      color: #fff;
+      color: $white;
     }
   }
 
