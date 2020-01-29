@@ -17,7 +17,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <SEO />
+                <SEO title="Print" />
                 <Navbar />
                 <ContactSection />
                 <ClientReview />

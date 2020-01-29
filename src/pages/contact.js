@@ -16,7 +16,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <SEO />
+                <SEO title="Contact Us" />
                 <Navbar />
                 <ContactSection />
             </Layout>

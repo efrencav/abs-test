@@ -13,7 +13,7 @@ export default () => {
     return (
         <>
             <Layout>
-                <SEO />
+                <SEO title="Abstract Creative" />
                 <section id="hero-banner" className="parallax" style={{ backgroundImage: `url(${BannerBg})` }}>
                     <div className="container">
                         <div className="row">
