@@ -8,7 +8,7 @@ export const Services = () => {
             <div className="container">
                 <div className="zoom-services__wrapper zoom-services__wrapper zoom-services__wrapper_bordered">
                     <div className="zoom-services__list">
-                        <Link to="/" className="zoom-services__item">
+                        <Link to="/branding" className="zoom-services__item">
                             <span className="black">
                                 <span className="zoom-services__item-title">Branding</span>
                                 <span className="zoom-services__item-text">Successful companies have clear & cohesive brand identities.</span>
@@ -18,7 +18,7 @@ export const Services = () => {
                             </span>
                         </Link>
 
-                        <Link to="/" className="zoom-services__item" >
+                        <Link to="/digital" className="zoom-services__item" >
                             <span className="black">
                                 <span className="zoom-services__item-title">Digital</span>
                                 <span className="zoom-services__item-text">Effective online communications to promote our clients’ businesses.</span>
@@ -29,7 +29,7 @@ export const Services = () => {
                             </span>
                         </Link>
 
-                        <Link to="/" className="zoom-services__item" >
+                        <Link to="/print" className="zoom-services__item" >
                             <span className="black">
                                 <span className="zoom-services__item-title">Print</span>
                                 <span className="zoom-services__item-text">Print media gives you the opportunity to engage with a target audience.</span>
@@ -40,7 +40,7 @@ export const Services = () => {
                             </span>
                         </Link>
 
-                        <Link to="/" className="zoom-services__item" >
+                        <Link to="/advertising" className="zoom-services__item" >
                             <span className="black">
                                 <span className="zoom-services__item-title">Advertising</span>
                                 <span className="zoom-services__item-text">Establish an emotional connection with consumers.</span>

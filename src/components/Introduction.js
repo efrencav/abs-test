@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import "../scss/intro.scss";
 import Zoom from "../images/others/20years.jpg";
 
@@ -23,7 +23,7 @@ export const Introduction = () => {
                         <div className="zoom-counter__text">
                             <p>We are idea-driven, working with a strong focus on design and user experience. We love crafting beautiful, smart and inspired work that focuses on a business’ goals and their customers. We do this across multiple touch points to help organizations achieve their goals.</p>
                         </div>
-                        <a className="zoom-counter__read-more zoom-counter__read-more_inverted" href="about.html">more about us</a>
+                        <Link to="/about" className="zoom-counter__read-more zoom-counter__read-more_inverted">more about us</Link>
                     </div>
                 </div>
             </div>

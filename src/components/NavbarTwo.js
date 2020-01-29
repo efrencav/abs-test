@@ -37,7 +37,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link
                                     className="nav-link"
-                                    to="/homepageSlider/"
+                                    to="/"
                                     smooth={true}
                                     duration={1000}
                                 >Home</Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link
                                     className="nav-link"
-                                    to="/about-section"
+                                    to="/about"
                                     smooth={true}
                                     offset={-60}
                                     duration={1000}
@@ -54,7 +54,7 @@ const Navbar = () => {
                             <li className="nav-item">
                                 <Link
                                     className="nav-link"
-                                    to="services"
+                                    to="/services"
                                     smooth={true}
                                     offset={-60}
                                     duration={1000}

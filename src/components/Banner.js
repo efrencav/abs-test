@@ -1,4 +1,5 @@
 import React from "react"
+// import background from "../images/bg/bg2.jpg"
 
 const Banner = ({ bannerBg, bannerStyle }) => {
   return (
