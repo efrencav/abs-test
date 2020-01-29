@@ -8,7 +8,7 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata: {
-    title: `Othelo - Onepage Gatsby template`,
+    title: `Abstract Creative`,
     description: "This is template description and the text will be long.",
     author: "TheShahriyar",
     image: "/thumbnail.jpg",

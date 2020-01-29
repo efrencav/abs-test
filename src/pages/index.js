@@ -18,7 +18,7 @@ import { withPrefix } from "gatsby"
 import Services from "../components/Services"
 
 
-const HomepageSlider = () => {
+const index = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -48,7 +48,7 @@ const HomepageSlider = () => {
       <Helmet>
         <script src={withPrefix('swiper.min.js')} type="text/javascript" />
       </Helmet>
-        <SEO/>
+        <SEO title="Home" />
         <Navbar />
         <Slideshow/>
 
@@ -325,4 +325,4 @@ const HomepageSlider = () => {
   )
 }
 
-export default HomepageSlider
+export default index
