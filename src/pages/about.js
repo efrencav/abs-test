@@ -1,15 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "react-scroll"
-import ContactSection from "../components/ContactSection"
-
-import BannerImage from "../images/preview/parallax.jpg"
-import SliderImage from "../images/preview/revolution-slider.jpg"
+import AboutIntro from "../components/about/AboutIntro"
+import ChooseUs from "../components/about/ChooseUs"
+import Awards from "../components/about/Awards"
 import BannerBg from "../images/bg/banner.jpg"
-import SectionTitle from "../components/SectionTitle"
 import Navbar from "../components/NavbarTwo"
-
-
 import SEO from "../components/SEO"
 
 export default () => {
@@ -31,7 +27,9 @@ export default () => {
                         </div>
                     </div>
                 </section>
-                <ContactSection />
+                <AboutIntro />
+                <ChooseUs />
+                <Awards />
             </Layout>
         </>
     )

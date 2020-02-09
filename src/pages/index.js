@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "gatsby"
 import Introduction from "../components/Introduction"
 import SectionTitle from "../components/SectionTitle"
 import Portfolio from "../components/Portfolio"
@@ -155,23 +156,23 @@ const index = () => {
                           </p>
                           <p>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-comments"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               15
                             </span>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-eye"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               11
                             </span>
                           </p>
                         </div>
                         <h4>
-                          <a href="#">
+                          <Link to="/">
                             Lorem Ipsum is dummy text of type setting industry.
-                          </a>
+                          </Link>
                         </h4>
                         <p>
                           Vivamus magna justo, lacinia eget consectetur convallis
@@ -199,23 +200,23 @@ const index = () => {
                           </p>
                           <p>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-comments"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               15
                             </span>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-eye"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               11
                             </span>
                           </p>
                         </div>
                         <h4>
-                          <a href="#">
+                          <Link to="/">
                             Lorem Ipsum is dummy text of type setting industry.
-                          </a>
+                          </Link>
                         </h4>
                         <p>
                           Vivamus magna justo, lacinia eget consectetur convallis
@@ -243,23 +244,23 @@ const index = () => {
                           </p>
                           <p>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-comments"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               15
                             </span>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-eye"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               11
                             </span>
                           </p>
                         </div>
                         <h4>
-                          <a href="#">
+                          <Link to="/">
                             Lorem Ipsum is dummy text of type setting industry.
-                          </a>
+                          </Link>
                         </h4>
                         <p>
                           Vivamus magna justo, lacinia eget consectetur convallis
@@ -287,23 +288,23 @@ const index = () => {
                           </p>
                           <p>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-comments"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               15
                             </span>
                             <span>
-                              <a href="#">
+                              <Link to="/">
                                 <i className="fa fa-eye"></i>
-                              </a>{" "}
+                              </Link>{"/"}
                               11
                             </span>
                           </p>
                         </div>
                         <h4>
-                          <a href="#">
+                          <Link to="/">
                             Lorem Ipsum is dummy text of type setting industry.
-                          </a>
+                          </Link>
                         </h4>
                         <p>
                           Vivamus magna justo, lacinia eget consectetur convallis

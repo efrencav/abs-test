@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 // import ContactSection from "../../components/ContactSection"
 
 
-import SliderImage from "../../images/preview/revolution-slider.jpg"
+// import SliderImage from "../../images/preview/revolution-slider.jpg"
 import BannerBg from "../../images/bg/banner.jpg"
 import SectionTitle from "../../components/SectionTitle"
 import Navbar from "../../components/NavbarTwo"
@@ -50,9 +50,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">Latest Gatsby JS</h3>
-                                            </a>
+                                            </Link>
                                             <p>We are using here latest version of Gatsby Framework. And we will update it.</p>
                                         </div>
                                     </div>
@@ -67,9 +67,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">FontAwesome icon</h3>
-                                            </a>
+                                            </Link>
                                             <p>We are using here 4.7.0 version of FontAwesome icon. And we will update it.</p>
                                         </div>
                                     </div>
@@ -84,9 +84,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">ET Line icon Pack</h3>
-                                            </a>
+                                            </Link>
                                             <p>Bonding is integrated with ET Line icon pack. When update come then We will update.</p>
                                         </div>
                                     </div>
@@ -101,9 +101,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">React Bootstrap</h3>
-                                            </a>
+                                            </Link>
                                             <p>Othelo is integrated with famous react-bootstrap which is built with Bootstrap 4. Be Happy.</p>
                                         </div>
                                     </div>
@@ -118,9 +118,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">Responsive Design</h3>
-                                            </a>
+                                            </Link>
                                             <p>Our Template is 100% responsive. Before release we tested it in many device.</p>
                                         </div>
                                     </div>
@@ -135,9 +135,9 @@ export default () => {
                                             </div>
                                         </div>
                                         <div className="media-body ml-3">
-                                            <a href="#">
+                                            <Link to="/">
                                                 <h3 className="media-heading">Browser Compatible</h3>
-                                            </a>
+                                            </Link>
                                             <p>This Template is compatible in every web browser. We tested in chrome, mozilla, EDGE and result is fine.</p>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@ export default () => {
                             <div className="col-md-12 text-center">
                                 <h3>Othelo</h3>
                                 <div className="copyright-text">
-                                    <p>Copyright © All Rights Reserved. Developed by <a href="#">TheShahriyar</a></p>
+                                    <p>Copyright © All Rights Reserved. Developed by <Link to="/">TheShahriyar</Link></p>
                                 </div>
                             </div>
                         </div>
