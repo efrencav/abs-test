@@ -6,7 +6,7 @@ import ChooseUs from "../components/about/ChooseUs"
 import Awards from "../components/about/Awards"
 import BannerBg from "../images/bg/banner.jpg"
 import Navbar from "../components/NavbarTwo"
-import SEO from "../components/SEO"
+import SEO from "../components/seo"
 
 export default () => {
     return (
