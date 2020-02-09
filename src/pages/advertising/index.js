@@ -10,8 +10,6 @@ import SectionTitle from "../../components/SectionTitle"
 import Navbar from "../../components/NavbarTwo"
 import Services from "../../components/Services"
 
-
-
 import SEO from "../../components/SEO"
 
 export default () => {
