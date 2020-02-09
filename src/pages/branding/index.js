@@ -12,7 +12,7 @@ import Services from "../../components/Services"
 
 
 
-import SEO from "../../components/SEO"
+import SEO from "../../components/seo"
 
 export default () => {
     return (
