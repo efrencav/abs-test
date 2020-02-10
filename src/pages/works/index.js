@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../../components/Layout"
 import { Link } from "react-scroll"
 import SectionTitle from "../../components/SectionTitle"
+import Portfolio from "../../components/Portfolio"
+
 // import BannerImage from "../images/preview/parallax.jpg"
 // import SliderImage from "../images/preview/revolution-slider.jpg"
 import BannerBg from "../../images/bg/banner.jpg"
@@ -29,6 +31,25 @@ export default () => {
                         </div>
                     </div>
                 </section>
+                {/* Start Portfolio Section */}
+                <section id="portfolio" className="pad-t80 pad-b50">
+                <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                    <SectionTitle
+                        titleStyle="text-center"
+                        title="Awarded Work"
+                        text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Donec odio. Quisque volutpat mattis eros. Nullam malesuada
+                        erat ut turpis. Suspendisse urna nibh, viverra non, semper
+                        suscipit, posuere a, pede. Donec nec justo"
+                    />
+                    </div>
+                </div>
+                <Portfolio />
+                </div>
+                </section>
+                {/* End Portfolio Section */}
                 {/* Start Service Section */}
                 <section
                 id="services"

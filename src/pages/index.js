@@ -17,6 +17,7 @@ import "../scss/portfolioSlider.scss"
 import Helmet from "react-helmet"
 import { withPrefix } from "gatsby"
 import Services from "../components/Services"
+import CallToAction from "../components/CallToAction"
 
 
 const index = () => {
@@ -312,6 +313,13 @@ const index = () => {
           </div>
         </section>
         {/* End Latest News Section */}
+
+        {/* Start Contact Section */}
+        <section id="contact">
+          <CallToAction />
+        </section>
+        {/* End Contact Section */}
+        
 
       </Layout>
     </>

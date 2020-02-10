@@ -14,19 +14,7 @@ export default () => {
             <Layout>
                 <SEO title="Project One" />
                 <Navbar />
-                <section id="back-to-top" style={{ backgroundImage: `url(${BannerBg})` }}>
-                    <div classNameName="container">
-                        <div classNameName="row">
-                            <div classNameName="col-md-12">
-                                <div classNameName="preview-banner text-center white">
-                                    <h1>Project One</h1>
-                                    <p>Multipurpose React Gatsby Onepage Template</p>
-                                    <Link to="portfolio" smooth={true} duration={1000} classNameName="btn btn-primary page-scroll">Template Variation</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 {/* Start Project Description Section */}
                 <ProjectDesc />
                 {/* EndProject Description  Section */}

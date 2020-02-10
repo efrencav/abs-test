@@ -16,7 +16,7 @@ const list = [
     imgSource: Portfolio1,
     title: "Portfolio Title",
     tag: "Business || Finance",
-    link: "#",
+    link: "/works/projectOne/",
   },
   {
     category: "cat1",
