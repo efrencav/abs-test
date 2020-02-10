@@ -3,7 +3,7 @@ import {Link} from "gatsby"
 import Introduction from "../components/Introduction"
 import SectionTitle from "../components/SectionTitle"
 import Portfolio from "../components/Portfolio"
-// import PortfolioSlider from "../components/PortfolioSlider"
+// import ProjectSlideshow from "../components/PortfolioSlider"
 import Slider from "react-slick"
 import BlogImg4 from "../images/blog/img-4.jpg"
 import BlogImg5 from "../images/blog/img-5.jpg"
@@ -59,12 +59,8 @@ const index = () => {
         className="pad-t10">        
           <Introduction />
         </section>
-
         {/* End About Us Section */}
         
-
-
-
         {/* Start Service Section */}
         <section
           id="services"
@@ -91,7 +87,6 @@ const index = () => {
             </div>
           </div>
         </section>
-
         {/* End Service Section */}
 
         {/* Start Portfolio Section */}
@@ -113,9 +108,6 @@ const index = () => {
           </div>
         </section>
         {/* End Portfolio Section */}
-
-
-        
 
         {/* Start Latest News Section */}
         <section
