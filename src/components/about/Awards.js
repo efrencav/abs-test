@@ -1,14 +1,21 @@
 import React from 'react'
 import "../../scss/style.scss"
 import "../../scss/responsive.scss"
+import SectionTitle from "../../components/SectionTitle"
+
 
 export const Awards = () => {
     return (
         <div className="awards-block">
         <div className="container">
           <div className="heading-group heading-group heading-group_centered">
-            <div className="heading-group__subtitle">our winning</div>
-            <div className="heading-group__title">Achievements & Prizes</div>
+            <div className="heading-group__subtitle">our accomplishments</div>
+            <SectionTitle
+                  titleStyle="text-center"
+                  title="Achievements & Prizes"
+                  // text="Was likeness brought divided given fruit in wherein lights green hath third bring let creeping. Third them firmament give green Creature night first"
+                />
+            {/* <div className="heading-group__title">Achievements & Prizes</div> */}
           </div>
           <div className="awards-block__body">
             <div className="awards-block__item">

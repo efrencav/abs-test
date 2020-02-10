@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import "../../scss/style.scss"
 import "../../scss/responsive.scss"
 import Services from "../../components/Services"
-
+import SectionTitle from "../../components/SectionTitle"
 
 
 export const AboutIntro = () => {
@@ -23,9 +23,21 @@ export const AboutIntro = () => {
             </div>
           </div>
         </div>
-        <Services />
+        <div className="container">
+          <div className="heading-group heading-group heading-group_centered">
+            <div className="heading-group__subtitle">What do we do</div>
+            <SectionTitle
+                  titleStyle="text-center"
+                  title="Our Services"
+                  text="Was likeness brought divided given fruit in wherein lights green hath third bring let creeping. Third them firmament give green Creature night first"
+                />
+            {/* <div className="heading-group__title">Achievements & Prizes</div> */}
+          </div>
+        </div>
+        </div>
+        <Services>
+          </Services>
       </div>
-    </div>
   )
 }
 
