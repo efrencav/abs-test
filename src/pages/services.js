@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 
 // import SliderImage from "../../images/preview/revolution-slider.jpg"
-import BannerBg from "../images/bg/banner.jpg"
+import BannerBg from "../images/services/services-hero.jpg"
 import SectionTitle from "../components/SectionTitle"
 import Navbar from "../components/NavbarTwo"
 import Services from "../components/Services"
