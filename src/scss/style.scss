@@ -2411,3 +2411,7 @@ heading-group
   background-position: center;
   background-size: 100% auto;
 }
+
+.carousel-indicators .active {
+  opacity: 0 !important;
+}
