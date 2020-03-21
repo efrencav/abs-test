@@ -6,7 +6,7 @@ import Portfolio from "../../components/Portfolio"
 
 // import BannerImage from "../images/preview/parallax.jpg"
 // import SliderImage from "../images/preview/revolution-slider.jpg"
-import BannerBg from "../../images/bg/banner.jpg"
+import BannerBg from "../../images/works/works-hero.jpg"
 import Services from "../../components/Services"
 // import SectionTitle from "../components/SectionTitle"
 import Navbar from "../../components/NavbarTwo"

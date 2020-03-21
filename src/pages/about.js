@@ -4,7 +4,7 @@ import { Link } from "react-scroll"
 import AboutIntro from "../components/about/AboutIntro"
 import ChooseUs from "../components/about/ChooseUs"
 import Awards from "../components/about/Awards"
-import BannerBg from "../images/bg/banner.jpg"
+import BannerBg from "../images/about/about-us-blue.jpg"
 import Navbar from "../components/NavbarTwo"
 import SEO from "../components/seo"
 
